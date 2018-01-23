@@ -1,0 +1,42 @@
+{
+  "name": "quick-http-server",
+  "description": "A quick and simple zero-configuration command-line http server",
+  "scripts": {
+    "pretest": "common bin/quick-http-server lib/ test",
+    "start": "node ./bin/http-server",
+    "test": "vows --spec --isolate"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
+  "bin": {
+    "quick-http-server": "./bin/quick-http-server",
+    "qhs": "./bin/quick-http-server"
+  },
+  "homepage": "https://github.com/sparksystems/quick-http-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sparksystems/quick-http-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sparksystems/quick-http-server/issues"
+  },
+  "keywords": [
+    "cli",
+    "command"
+  ],
+  "devDependencies": {
+    "common-style": "^3.0.0",
+    "request": "2.49.x",
+    "vows": "0.7.x"
+  },
+  "dependencies": {
+    "colors": "1.0.3",
+    "corser": "~2.0.0",
+    "ecstatic": "^3.0.0",
+    "http-proxy": "^1.8.1",
+    "opener": "~1.4.0",
+    "optimist": "0.6.x",
+    "portfinder": "^1.0.13",
+    "union": "~0.4.3"
+  }
+}
